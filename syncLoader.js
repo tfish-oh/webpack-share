@@ -1,8 +1,9 @@
 const path =require('path')
+const fs = require('fs')
 const { getOptions ,parseQuery } =require("loader-utils")
 const marked = require("marked");
 
-
+console.log(fs)
 module.exports = function (source){
   this.cacheable && this.cacheable()
   // const options = getOptions(this)
