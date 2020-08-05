@@ -7,7 +7,7 @@ module.exports={
     entry:{
         main:'./index.js'
     },
-    output:{
+    output: {
         path:path.resolve(__dirname,'dist'),
         filename:'bundle.js'
     },
@@ -23,13 +23,10 @@ module.exports={
             {
                 test: /\.md$/,
                 use:[
-                    // 'syncLoader'
+                    
                     'html-loader',
                     {
-                        loader:'syncLoader',
-                        // options:{
-                        //     message:'888'
-                        // }
+                        loader:'syncLoader'                     
                     }
                 ]
                 

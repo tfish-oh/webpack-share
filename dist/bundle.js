@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _markdown_test_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./markdown/test.md */ \"./markdown/test.md\");\n/* harmony import */ var _markdown_test_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_markdown_test_md__WEBPACK_IMPORTED_MODULE_0__);\nconsole.log(666);\n\nvar node = document.createElement('div');\nnode.innerHTML = _markdown_test_md__WEBPACK_IMPORTED_MODULE_0___default.a;\ndocument.body.append(node);\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _markdown_test_md__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./markdown/test.md */ \"./markdown/test.md\");\n/* harmony import */ var _markdown_test_md__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_markdown_test_md__WEBPACK_IMPORTED_MODULE_0__);\nconsole.log('world   hello everybody'); // const marked = require(\"marked\");\n\n\nvar node = document.createElement('div');\nconsole.log(_markdown_test_md__WEBPACK_IMPORTED_MODULE_0___default.a);\nnode.innerHTML = _markdown_test_md__WEBPACK_IMPORTED_MODULE_0___default.a;\ndocument.body.append(node);\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 

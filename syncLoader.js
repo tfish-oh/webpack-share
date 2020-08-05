@@ -3,20 +3,19 @@ const fs = require('fs')
 const { getOptions ,parseQuery } =require("loader-utils")
 const marked = require("marked");
 
-console.log(fs)
-module.exports = function (source){
+// console.log(fs)
+module.exports = function (source) {
   this.cacheable && this.cacheable()
-  // const options = getOptions(this)
-  
+  const options = getOptions(this)
   try {
-    // marked.setOptions(options);
-    console.log(marked(source))
-    return marked(source)
+    let str = marked(source) 
+    // let code = JSON.stringify(str).replace(/[\u2028\u2029]/g, str => str === '\u2029' ? '\\u2029' : '\\u2028');
+    // return  `// Exports\nexport default ${code};`
+    return str 
   } catch (err) {
     this.emitError(err);
     return null
   }
-  // return  source 
 }
 
 
