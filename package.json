@@ -22,6 +22,6 @@
     "clean-webpack-plugin": "^3.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
-    "marked": "^1.1.1"
+    "marked": "^2.0.0"
   }
 }
